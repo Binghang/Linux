@@ -24,10 +24,10 @@ void Bubble_Sort(int arr[], int Len) {
 
 int main(void) {
 	int data[10] = {12,1,44,55,69,23,19,4,90,28};
-	int lenght = sizeof(data)/sizeof(data[0]);
+	int lenght = sizeof(data)/sizeof(*data);
 	Bubble_Sort(data,lenght);
-
-	for(lenght = 0; lenght < 10; lenght++)
-		printf("%d \n",data[lenght]);
+	int index;
+	for(index = 0; index < lenght; index++)
+		printf("%d \n",data[index]);
 	
 }

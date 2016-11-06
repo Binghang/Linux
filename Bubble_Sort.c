@@ -18,11 +18,11 @@ void Bubble_Sort (int arr[], int len) {
 
 int main(void) {
 	int data[] = {12,1,44,55,69,23,19,4,90,28};
-	int x = sizeof(data)/sizeof(data[0]);
-	
+	int x = sizeof(data)/sizeof(*data);
+	int index;	
 	Bubble_Sort(data, x);
 
-	for(x = 0; x <= 10; x++)
-		printf("%d \n", data[x]);
+	for(index = 0; index < x; index++)
+		printf("%d \n", data[index]);
 }
 
